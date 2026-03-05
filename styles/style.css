@@ -1,14 +1,22 @@
 /* kontejner nebude širší jak 1200px, bude vycentrovaný */
 body > .container {
+    max-width: 1200px;
+    min-width: 600px;
+    
 }
 
 /* obrázky jsou responzivní */
 .img-responsive {
+    max-width: 100%;
+    object-fit: cover;
+    display: inline-block;
+    justify-content: center;    
 }
 
 /* panely date a article jsou vedle sebe */
 
 .news-item {
+    display: flex;
 }
 
 /* datum je vystředěno ve čtverci o hraně 116px, mezi měsícem a dnem je "--color-bg-pink" linka, pod dnem je "--category-accent" linka */
